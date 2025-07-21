@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*body*/
+body{
+    width:100%;
+    height:100%;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+/* logo*/
+#logo{
+    width: 20w;
+
+}
+/*H1*/
+h1{
+    color:aliceblue ;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+}
+/*Msg*/
+#name{
+    color: aqua;
+    font-size:50px;
+}
+/*GIF*/
+#voice{
+    width: auto;
+    display: none;
+}
+/*Button*/
+button{
+    width:20%;   
+    background: linear-gradient(to right,rgb(243, 145, 9),rgb(17, 145, 151));
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    color:white;
+    box-shadow: 2px 2px 10px rgb(243, 145, 9),2px 2px 10px rgb(17, 145, 151);
+    border:none;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+/*Hover on button*/
+#btn:hover{
+    box-shadow: 2px 2px 20px rgb(243, 145, 9),2px 2px 20px rgb(17, 145, 151);
+    letter-spacing: 2px;
+}
