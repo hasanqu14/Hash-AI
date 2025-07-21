@@ -1,5 +1,6 @@
 let btn = document.querySelector("#btn");
 let content = document.querySelector("#content");
+let voice= document.querySelector("#voice");
 
 // Speak Function
 function speak(text) {
@@ -35,8 +36,9 @@ let recognition = new SpeechRecognition();
 
 btn.addEventListener("click", () => {
     recognition.start();
+    btn.style.display = "none";      // Use quotes
+    voice.style.display = "block";   // Use quotes
 });
-
 // When speech is recognized
 recognition.onresult = (event) => {
     let currentIndex = event.resultIndex;
@@ -48,6 +50,8 @@ recognition.onresult = (event) => {
 
 // Command handler
 function takecmd(message) {
+     btn.style.display = "flex";      // Use quotes
+    voice.style.display = "none"; 
     const msg = message.toLowerCase();
 
     // Greetings
